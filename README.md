@@ -1,127 +1,120 @@
-# Exploratory Data Analysis of International T20 Cricket Dataset
+# International T20 Cricket Data Analysis (EDA)
 
-## Overview
-This project performs **Exploratory Data Analysis (EDA)** on an international **T20 cricket dataset** using Python.  
-The objective is to explore patterns in T20 cricket matches such as team performance, win margins, toss decisions, venues, and match trends over the years.
+## Project Introduction
+This project focuses on performing **Exploratory Data Analysis (EDA)** on a dataset of **International T20 cricket matches** using Python.
 
-The analysis is done using **Pandas, NumPy, Matplotlib, and Seaborn**.
+The goal of this analysis is to uncover patterns in T20 matches such as **team success rates, toss impact, match venues, yearly trends, and match-winning margins**.
+
+Various **Python data analysis and visualization libraries** were used to examine the dataset and generate meaningful insights.
 
 ---
 
-## Dataset Description
-The dataset contains information about international T20 cricket matches.
+## Dataset Information
+The dataset contains records of **international T20 cricket matches** including details such as:
 
+- Match date
+- Teams involved
+- Venue and city
+- Toss winner and toss decision
+- Match winner
+- Win margin
+- Umpires
 
-##  Tools and Libraries Used
+This information helps in analyzing performance trends and match dynamics.
+
+---
+
+## Technologies Used
+
+The project was developed using the following tools and libraries:
 
 - **Python**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **AST**
+- **Pandas** – for data manipulation and analysis
+- **NumPy** – for numerical operations
+- **Matplotlib** – for creating visualizations
+- **Seaborn** – for advanced statistical plots
+- **AST (Abstract Syntax Trees)** – for handling structured data
 
 ---
 
-## Data Preprocessing
+## Data Preparation
 
-The following preprocessing steps were performed:
+Before performing analysis, the dataset was cleaned and processed using the following steps:
 
-- Checked dataset structure using `shape()`, `info()`, and `describe()`
-- Renamed columns for clarity
-- Handled missing values
+- Examined dataset structure using `info()`, `shape`, and `describe()`
+- Renamed columns to improve readability
+- Managed missing or incomplete values
 - Converted date columns to **datetime format**
-- Extracted **year** from date columns for trend analysis
+- Extracted **year information** from dates for time-based analysis
+
+These preprocessing steps ensured the dataset was suitable for accurate analysis.
 
 ---
 
 ## Exploratory Data Analysis
 
-### 1 Matches Played Per Year
-Analyzed the number of matches played each year to observe the growth of T20 cricket.
+### Match Trends Over Time
+Analyzed how the number of international T20 matches has changed over different years.
 
-### 2️ Team Performance Analysis
-- Calculated **matches played by each team**
-- Calculated **matches won by each team**
-- Computed **win percentage for each team**
+### Team Performance Evaluation
+- Identified the teams with the **highest number of matches played**
+- Calculated **total wins by each team**
+- Computed **team win percentages**
 
-### 3️ Toss Analysis
-- Teams that won the most tosses
-- Toss decision distribution (bat vs field)
-- Comparison between **toss winner and match winner**
+### Toss Outcome Analysis
+- Determined which teams win the toss most frequently
+- Analyzed the distribution of **toss decisions (bat vs field)**
+- Examined the relationship between **toss winners and match winners**
 
-### 4️ Venue Analysis
-- Venues hosting the most matches
-- Distribution of matches across different cities
+### Venue Insights
+- Identified stadiums that hosted the **largest number of matches**
+- Analyzed match distribution across cities
 
-### 5️ Team Rivalry Analysis
-Identified **pairs of teams that played the most matches against each other**.
+### Team Rivalries
+Studied which pairs of teams have competed against each other the most times.
 
-### 6️ Umpire Analysis
-Determined the **umpires who officiated the most matches**.
+### Umpire Participation
+Found the **umpires who officiated the highest number of matches**.
 
-### 7️ Win Margin Analysis
-Analyzed distribution of **wins by runs and wickets**.
+### Win Margin Analysis
+Analyzed how matches are typically won:
 
----
-
-##  Data Visualizations
-
-The following visualizations were created using **Matplotlib and Seaborn**:
-
--  Bar chart of **top teams by matches won**
--  Bar chart of **top teams by matches played**
--  Line plot of **matches played per year**
--  Histogram of **win margins**
--  Box plot showing **spread of win margins**
--  Correlation heatmap
--  Venue popularity chart
-
-These visualizations help identify trends and patterns in the dataset.
+- Victories by **runs**
+- Victories by **wickets**
 
 ---
 
-##  Key Insights
+## Visualizations
 
-Some important insights from the analysis include:
+Several plots were created to better understand the dataset, including:
 
-- Certain teams have consistently higher win percentages.
-- Some venues host significantly more matches than others.
-- Winning the toss does not guarantee winning the match.
-- The number of T20 matches has increased over time.
-- Some team rivalries occur more frequently than others.
+- **Bar charts** showing teams with the most wins
+- **Bar charts** displaying teams with the most matches played
+- **Line chart** representing match frequency by year
+- **Histogram** illustrating distribution of win margins
+- **Box plots** highlighting variability in win margins
+- **Correlation heatmap** for numeric relationships
+- **Charts showing most popular venues**
+
+These visualizations help present insights in a clear and intuitive way.
 
 ---
 
-##  How to Run the Project
+## Major Observations
 
-1️ Install required libraries
+Key findings from the analysis include:
+
+- A few teams dominate in terms of total wins and win percentage.
+- Some cricket stadiums host significantly more matches than others.
+- Winning the toss does not necessarily lead to winning the match.
+- The number of international T20 matches has steadily increased over time.
+- Certain team rivalries occur much more frequently.
+
+---
+
+## Running the Project
+
+### 1. Install the required libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn
-```
-
-2️ Load the dataset into Python.
-
-3️ Run the analysis notebook or Python scripts to generate insights and visualizations.
-
----
-
-## Learning Outcomes
-
-This project demonstrates:
-
-- Data cleaning and preprocessing
-- Data aggregation using Pandas
-- Data visualization techniques
-- Sports data analysis using Python
-
----
-
-##  Author
-
-**Yash Raj Mehta**
-
-This project was developed as part of a **Data Analysis / Exploratory Data Analysis assignment** using Python.
-
----
